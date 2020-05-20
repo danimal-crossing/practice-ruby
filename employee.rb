@@ -16,32 +16,13 @@
 
 class Employee
 
+  attr_reader :first_name, :last_name, :salary, :active
+  attr_writer :active
+
   def initialize(input_first_name, input_last_name, input_salary, input_active)
     @first_name = input_first_name
     @last_name = input_last_name
     @salary = input_salary
-    @active = input_active
-  end
-
-  # reader methods
-  def first_name
-    @first_name    
-  end
-
-  def last_name
-    @last_name    
-  end
-
-  def salary
-    @salary    
-  end
-
-  def active
-    @active    
-  end
-
-  # writer method
-  def active=(input_active)
     @active = input_active
   end
 
@@ -60,10 +41,11 @@ employee1 = Employee.new("Majora", "Carter", 80000, true)
 employee2 = Employee.new("Danilo", "Campos", 70000, true)
 employee1.print_info
 employee2.print_info
-# puts employee1.first_name
-# puts employee1.last_name
-# puts employee1.salary
+puts employee1.first_name
+puts employee1.last_name
+puts employee1.salary
 puts employee1.active
 employee1.active = false
 puts employee1.active
+
 
