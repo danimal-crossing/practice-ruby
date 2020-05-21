@@ -47,5 +47,3 @@ puts employee1.salary
 puts employee1.active
 employee1.active = false
 puts employee1.active
-
-
