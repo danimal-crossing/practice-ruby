@@ -40,14 +40,6 @@ class Manager < Employee
     puts "Email sent!"
   end
 
-  def print_info
-    super
-    puts "This manager is managing #{employees.length} employees."
-  end
-
 end
 
 manager = Manager.new(first_name: "Corey", last_name: "Feldman", salary: 100000, active: true, employees: [employee1, employee2])
-manager.print_info
-manager.send_report
-p manager.employees
